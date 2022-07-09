@@ -5,33 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Frontend Mentor | Product preview card component</title>
 
 </head>
 <body>
-
-  <header class="header">
-    <div class="header__img"></div>
-  </header>
-  <main>
-    <div class="info">
-      <div class="info__container container">
-        <h1 class="info__product-title">
+  <main class="main">
+    <div class="display">
+      <div class="display__container container">
+        <div class="display__img"></div>
+        <h1 class="display__title">
           <span class="overline">Perfume</span>
           Gabrielle Essence Eau De Parfum
         </h1>
-          <p class="info__product-description">
+          <p class="display__body">
             A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
           </p>
       </div>
     </div>
     <div class="pricing">
       <div class="pricing__container container">
-        <h1 class="pricing__product-price">$149.99&nbsp;&nbsp;<span>$169.99</span></h1>
+        <h1 class="pricing__display-price">$149.99&nbsp;&nbsp;<span class="display-original-price">$169.99</span></h1>
+        <a href="pricing__btn btn">
+          <p class="btn-text">Add to Cart</p>
+        </a>
       </div>
-      <a href="purchase-btn btn">Add to Cart</a>
     </div>
   </main>
   

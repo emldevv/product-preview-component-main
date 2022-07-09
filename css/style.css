@@ -1,5 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+/* Reset properties */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+body,
+main,
+h1, h2, h3,
+p {
+    margin: 0;
+}
 
+  
+/* Custom Properties */
+  :root {
+    --ff-mont: 'Montserrat', serif;
+    --ff-frau: 'Fraunces', serif;
+
+    --fw-m: 500;
+    --fw-b: 700;
+
+    font-size: 10px;
+    --fs-0: 3.8rem;
+    --fs-1: 3.2rem;
+    --fs-2: 2.8rem;                                       /* fs = font size */
+    --fs-3: 2.6rem;
+    --fs-4: 2.2rem;
+    --fs-p: 1.4rem;
+    --fs-p1: 1.3rem;
+    --fs-overline: 1.2rem;
+
+    --clr-dark-cyan: hsl(158, 36%, 37%); 
+    --clr-cream: hsl(30, 38%, 92%);
+    --clr-dark-blue: hsl(212, 21%, 14%);
+    --clr-dark-grayish-blue: hsl(228, 12%, 48%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    --spacer: 1rem;
+    --spacer-md: calc(var(--spacer) * 2);
+    --spacer-lg: calc(var(--spacer) * 3);
+    
+    --shadow: 0 0 1em rgba(0,0,0, .25);
+    --br: 5px;
+  }
+
+/* General styles */
+body {
+    cursor: default;
+    scroll-behavior: smooth;
+    background-color: var(--clr-cream);
+}
+img {
+    max-width: 100%;
+}
+.btn {
+    line-height: 1.7rem;
+}
+
+/* General typography */
+h1 {
+    font-family: var(--ff-frau);
+    font-size: var(--fs-1);
+    font-weight: var(--fw-b);
+    line-height: 3.2rem;
+}
+.overline {
+    font-family: var(--ff-mont);
+    font-size: var(--fs-overline);
+    font-weight: var(--fw-m);
+    line-height: 1.46rem;
+    letter-spacing: 0.5rem;
+}
+p {
+    font-family: var(--ff-mont);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-m);
+    line-height: 2.3rem;
+}
+
+.main {
+    width: 343px;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-white);
+}
 
 
 .attribution { 
