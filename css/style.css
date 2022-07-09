@@ -94,7 +94,16 @@ p {
     align-items: center;
     background-color: var(--clr-white);
 }
-
+.display__img {
+    /* May just want to use the old html insert. Getting a bit complicated for such a simple image */
+    background: url(../images/image-product-mobile.jpg) no-repeat;
+    background-size: auto 70%;
+    position: relative;
+    width: 34.3rem;
+    height: 24rem;
+    background-position-x: center;
+    background-position-y: top;
+}
 
 .attribution { 
     font-size: 11px; text-align: center; 
