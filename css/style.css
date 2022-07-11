@@ -85,13 +85,23 @@ p {
 .main {
     background-color: var(--clr-cream);
 }
-.card {
+.display {
     background-color: var(--clr-white);
     width: 91%;
     margin: 3rem auto;
     border-radius: 1rem;
     overflow: hidden;
-
+}
+@media(min-width: 440px) {
+    .display {
+        max-width: 400.4px
+    }
+}
+@media (min-width: 768px) {
+    .display {
+        max-width: 600px;
+        max-height: 450px;
+        }
 }
 .container {
     background-color: var(--clr-white);
@@ -100,23 +110,46 @@ p {
 }
 
 /* Display - Header */
+@media (min-width: 768px) {
+    .display__container {
+        padding: 2.8rem
+    }
+}
 .display__img {
     width: 100%;
+}
+@media (min-width: 768px) {
+    .display__img {
+        max-width: 50%;
+    }
 }
 .overline {
     margin: 2.2rem 0 1.2rem 0;
 }
+@media (min-width: 768px) {
+    .overline {
+        margin-top: 0.4rem;
+        margin-bottom: 2rem;
+    }
+}
 .display__body {
     margin: 2rem 0;
 }
-.pricing__container {
+@media (min-width: 768px) {
+    .display__body {
+        margin: 2.4rem 0 2.9rem 0;
+    }
+}
+.display__pricing {
+    display: flex;
+    flex-direction: column;
+}
+.display__pricing-price {
+    color: var(--clr-dark-cyan);
     display: flex;
     align-items: center;
 }
-.pricing__display-price {
-    color: var(--clr-dark-cyan);
-}
-.display-original-price {
+.display__pricing-original-price {
     font-family: var(--ff-mont);
     font-size: var(--fs-p1);
     font-weight: var(--fw-m);
@@ -124,12 +157,12 @@ p {
     color: var(--clr-dark-grayish-blue);
     margin: 0 2rem;
 }
-.pricing__btn {
+.cart__btn {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 4.8rem;
-    width: 29.5rem;
+    width: 100%;
     margin: 2rem auto 2.4rem auto;
     background-color: var(--clr-dark-cyan);
     border-radius: 1rem;
@@ -137,15 +170,24 @@ p {
     font-size: var(--fs-p);
     font-weight: var(--fw-b);
     line-height: 1.7rem;
-    color: var(--clr-cream);
+    color: var(--clr-white);
     text-decoration: none;
+}
+@media (min-width: 768px) {
+    .cart__btn {
+        margin: 2.9rem auto 3.2rem auto;
+    }
 }
 .cart {
     width: 1.4rem;
     height: 1.6rem;
     margin-right: 1rem;
 }
-
+@media (min-width: 768px) {
+    .display {
+        display: flex;
+    }
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 
